@@ -1,0 +1,163 @@
+/* General Styles for Mobile Devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    padding: 15px;
+}
+
+.hero {
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    /* Adjusted for mobile view */
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.hero .btn-primary {
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+}
+
+.card {
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+footer {
+    font-size: 0.9rem;
+    background-color: #343a40;
+    padding: 15px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+}
+#demo {
+    width: 220% !important;
+    height: auto !important;
+}
+
+.carousel-inner img {
+    width: 50% !important;
+    height: auto !important;
+}

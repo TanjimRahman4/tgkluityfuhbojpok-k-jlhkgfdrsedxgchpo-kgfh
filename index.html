@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahangir</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet">
+
+  <script>
+    function isMobileDevice() {
+        return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
+    }
+
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = isMobileDevice() ? "mobile.css" : "style.css";
+    document.head.appendChild(link);
+</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="Logo.png" id="img"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#models">Models</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel" style="height: 500px; width: 1350px;">
+    <ul class="carousel-indicators">
+        <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="3"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="4"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="5"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="6"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="7"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="8"></li>
+    </ul>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="11.jpg" width="1400px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="22.jpg" width="1400px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="33.jpg" width="1500px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="44.jpg" width="1500px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="55.jpg" width="1500px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="66.jpg" width="1500px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="77.jpg" width="1500px" height="500px">
+        </div>
+        <div class="carousel-item">
+            <img src="88.jpg" width="1500px" height="500px">
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div>
+    <h1>Drive the Future</h1>
+    <p class="lead">Luxury. Performance. Innovation.</p>
+    <a href="#models" class="btn btn-primary btn-lg mt-3">Explore Models</a>
+  </div>
+</section>
+
+<!-- Car Models -->
+<section id="models" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Models</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card car-card">
+          <img src="1.jpg" class="card-img-top" alt="Sedan" />
+          <div class="card-body">
+            <h5 class="card-title">Jahangir X1</h5>
+            <p class="card-text">A luxurious electric sedan with advanced autopilot features.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card car-card">
+          <img src="2.jpg" class="card-img-top" alt="SUV" />
+          <div class="card-body">
+            <h5 class="card-title">Jahangir Raptor</h5>
+            <p class="card-text">A powerful SUV designed for comfort and off-road dominance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card car-card">
+          <img src="3.jpg" class="card-img-top" alt="Sports" id="img1">
+          <div class="card-body">
+            <h5 class="card-title">Jahangir Veloz Golden</h5>
+            <p class="card-text">A high-performance sports car built for speed and agility and very exclusive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">About Jahangir Motors</h2>
+    <p class="text-center">Jahangir Motors is committed to crafting world-class vehicles that push the boundaries of design, performance, and sustainability. Our mission is to drive innovation and empower journeys through cutting-edge automotive technology.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Jahangir. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
